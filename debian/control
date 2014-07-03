@@ -1,0 +1,13 @@
+Source: noble
+Section: main
+Priority: extra
+Maintainer: Robert Hedges <rhedges@truefitness.com>
+Build-Depends: debhelper (>= 8.0.0), libbluetooth-dev
+Standards-Version: 3.9.2
+Homepage: http://www.truefitness.com
+
+Package: noble
+Architecture: i386
+Depends: ${shlibs:Depends}, ${misc:Depends}, nodejs, libbluetooth3
+Replaces: truetouch ( <<1.2.460 )
+Description: Truefitness packaging of noble Bluetooth smart central module

@@ -1,0 +1,6 @@
+noble (0.3.1-1) clever-testing; urgency=low
+
+  * Initial check-in of debian package for noble 0.3.1
+  * (from https://github.com/sandeepmistry/noble.git)
+
+ -- Robert Hedges <rhedges@truefitness.com>  Wed, 02 Jul 2014 16:31:30 -0500
