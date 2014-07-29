@@ -1,0 +1,39 @@
+From: Robert Hedges <rhedges@truefitness.com>
+Date: Tue, 29 Jul 2014 15:15:49 -0500
+Subject: Initial check-in of script that will discover and list heartrate
+ monitors.
+
+---
+ .../examples/advertisement-heartrate-discovery.js  |   22 ++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+ create mode 100644 noble/examples/advertisement-heartrate-discovery.js
+
+diff --git a/noble/examples/advertisement-heartrate-discovery.js b/noble/examples/advertisement-heartrate-discovery.js
+new file mode 100644
+index 0000000..4721007
+--- /dev/null
++++ b/noble/examples/advertisement-heartrate-discovery.js
+@@ -0,0 +1,22 @@
++var noble = require('../index');
++
++var serviceUUIDs = ["180d" ];
++
++
++noble.on('stateChange', function(state) {
++  if (state === 'poweredOn') {
++    noble.startScanning(serviceUUIDs);
++  } else {
++    noble.stopScanning();
++  }
++});
++
++noble.on('discover', function(peripheral) {
++  
++  if (peripheral.advertisement.txPowerLevel !== undefined) {
++  	console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName + ' ' + peripheral.advertisement.txPowerLevel);
++  }else{
++	console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName);
++	}	
++});
++
+-- 
