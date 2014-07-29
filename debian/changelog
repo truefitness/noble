@@ -1,6 +1,15 @@
 noble (0.3.1-1) clever-testing; urgency=low
 
+  [ Robert Hedges ]
   * Initial check-in of debian package for noble 0.3.1
   * (from https://github.com/sandeepmistry/noble.git)
+  * Initial check-in of node-modules
 
- -- Robert Hedges <rhedges@truefitness.com>  Wed, 02 Jul 2014 16:31:30 -0500
+  [ Robert ]
+
+  [ Robert Hedges ]
+  * Add patch to provide heartrate discovery script.
+
+  [ Robert ]
+
+ -- Robert <rhedges@veracityBuild2>  Tue, 29 Jul 2014 15:17:48 -0500
