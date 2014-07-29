@@ -1,3 +1,12 @@
+noble (0.3.1-2) clever-testing; urgency=low
+
+  [ Robert Hedges ]
+  * add postinst to script to setuid on daemons
+
+  [ Robert ]
+
+ -- Robert <rhedges@veracityBuild2>  Tue, 29 Jul 2014 15:29:50 -0500
+
 noble (0.3.1-1) clever-testing; urgency=low
 
   [ Robert Hedges ]
