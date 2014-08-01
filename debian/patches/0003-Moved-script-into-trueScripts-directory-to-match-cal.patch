@@ -1,0 +1,69 @@
+From: Robert Hedges <rhedges@truefitness.com>
+Date: Fri, 1 Aug 2014 13:06:06 -0500
+Subject: Moved script into trueScripts directory to match calling scripts in
+ Veracity.
+
+---
+ .../examples/advertisement-heartrate-discovery.js  |   22 --------------------
+ .../advertisement-heartrate-discovery.js           |   22 ++++++++++++++++++++
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+ delete mode 100644 noble/examples/advertisement-heartrate-discovery.js
+ create mode 100644 noble/trueScripts/advertisement-heartrate-discovery.js
+
+diff --git a/noble/examples/advertisement-heartrate-discovery.js b/noble/examples/advertisement-heartrate-discovery.js
+deleted file mode 100644
+index 4721007..0000000
+--- a/noble/examples/advertisement-heartrate-discovery.js
++++ /dev/null
+@@ -1,22 +0,0 @@
+-var noble = require('../index');
+-
+-var serviceUUIDs = ["180d" ];
+-
+-
+-noble.on('stateChange', function(state) {
+-  if (state === 'poweredOn') {
+-    noble.startScanning(serviceUUIDs);
+-  } else {
+-    noble.stopScanning();
+-  }
+-});
+-
+-noble.on('discover', function(peripheral) {
+-  
+-  if (peripheral.advertisement.txPowerLevel !== undefined) {
+-  	console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName + ' ' + peripheral.advertisement.txPowerLevel);
+-  }else{
+-	console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName);
+-	}	
+-});
+-
+diff --git a/noble/trueScripts/advertisement-heartrate-discovery.js b/noble/trueScripts/advertisement-heartrate-discovery.js
+new file mode 100644
+index 0000000..4721007
+--- /dev/null
++++ b/noble/trueScripts/advertisement-heartrate-discovery.js
+@@ -0,0 +1,22 @@
++var noble = require('../index');
++
++var serviceUUIDs = ["180d" ];
++
++
++noble.on('stateChange', function(state) {
++  if (state === 'poweredOn') {
++    noble.startScanning(serviceUUIDs);
++  } else {
++    noble.stopScanning();
++  }
++});
++
++noble.on('discover', function(peripheral) {
++  
++  if (peripheral.advertisement.txPowerLevel !== undefined) {
++  	console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName + ' ' + peripheral.advertisement.txPowerLevel);
++  }else{
++	console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName);
++	}	
++});
++
+-- 
