@@ -1,0 +1,23 @@
+From: Robert Hedges <hedges@ieee.org>
+Date: Fri, 12 Sep 2014 20:09:33 +0000
+Subject: Allow duplicate scanning results so that an "undefined" will be
+ rescanned.
+
+---
+ .../advertisement-heartrate-discovery.js           |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/noble/trueScripts/advertisement-heartrate-discovery.js b/noble/trueScripts/advertisement-heartrate-discovery.js
+index 4721007..82bff91 100644
+--- a/noble/trueScripts/advertisement-heartrate-discovery.js
++++ b/noble/trueScripts/advertisement-heartrate-discovery.js
+@@ -5,7 +5,7 @@ var serviceUUIDs = ["180d" ];
+ 
+ noble.on('stateChange', function(state) {
+   if (state === 'poweredOn') {
+-    noble.startScanning(serviceUUIDs);
++    noble.startScanning(serviceUUIDs,true);
+   } else {
+     noble.stopScanning();
+   }
+-- 
