@@ -1,8 +1,13 @@
-noble (0.3.4) precise; urgency=low
+noble (0.3.4~1.gbp02bc90) precise; urgency=low
+
+  ** SNAPSHOT build @02bc90d15ca3ad6cc2954c28ca589a386e150889 **
 
   * Imported Upstream version 0.3.4
+  * Fix debian build for patch format
+  * Import new "ws" module needed by upstream v0.3.4
+  * Allow duplicates during scanning results so "undefined" will be rescanned.
 
- -- Robert Hedges <rhedges@truefitness.com>  Fri, 12 Sep 2014 19:50:48 +0000
+ -- Robert Hedges <rhedges@truefitness.com>  Fri, 12 Sep 2014 20:12:09 +0000
 
 noble (0.3.1-4) clever-testing; urgency=low
 
