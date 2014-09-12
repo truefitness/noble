@@ -1,3 +1,9 @@
+noble (0.3.4) precise; urgency=low
+
+  * Imported Upstream version 0.3.4
+
+ -- Robert Hedges <rhedges@truefitness.com>  Fri, 12 Sep 2014 19:50:48 +0000
+
 noble (0.3.1-4) clever-testing; urgency=low
 
   * Moved advertisement-heartrate-script to match calling script in Veracity
