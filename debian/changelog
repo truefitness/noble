@@ -1,3 +1,9 @@
+noble (0.3.4-1+true1) precise; urgency=medium
+
+  * Output addressType (public vs. random) when scanning heart rate devices
+
+ -- Mike Nolan <mpnolan@truefitness.com>  Wed, 01 Jun 2016 16:56:37 -0500
+
 noble (0.3.4-1) precise; urgency=low
 
   * Imported Upstream version 0.3.4
