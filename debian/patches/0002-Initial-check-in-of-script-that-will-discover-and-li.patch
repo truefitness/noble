@@ -4,7 +4,7 @@ Subject: Initial check-in of script that will discover and list heartrate
  monitors.
 
 ---
- .../examples/advertisement-heartrate-discovery.js  |   22 ++++++++++++++++++++
+ .../examples/advertisement-heartrate-discovery.js  | 22 ++++++++++++++++++++++
  1 file changed, 22 insertions(+)
  create mode 100644 noble/examples/advertisement-heartrate-discovery.js
 
@@ -36,4 +36,3 @@ index 0000000..4721007
 +	}	
 +});
 +
--- 

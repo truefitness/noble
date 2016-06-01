@@ -4,8 +4,8 @@ Subject: Moved script into trueScripts directory to match calling scripts in
  Veracity.
 
 ---
- .../examples/advertisement-heartrate-discovery.js  |   22 --------------------
- .../advertisement-heartrate-discovery.js           |   22 ++++++++++++++++++++
+ .../examples/advertisement-heartrate-discovery.js  | 22 ----------------------
+ .../advertisement-heartrate-discovery.js           | 22 ++++++++++++++++++++++
  2 files changed, 22 insertions(+), 22 deletions(-)
  delete mode 100644 noble/examples/advertisement-heartrate-discovery.js
  create mode 100644 noble/trueScripts/advertisement-heartrate-discovery.js
@@ -66,4 +66,3 @@ index 0000000..4721007
 +	}	
 +});
 +
--- 
