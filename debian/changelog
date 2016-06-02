@@ -1,4 +1,9 @@
-noble (0.3.4-2) UNRELEASED; urgency=low
+noble (0.3.4-2+true1) UNRELEASED; urgency=low
+
+  * Output addressType (public vs. random) when scanning heart rate devices
+
+ -- Mike Nolan <mpnolan@truefitness.com>  Wed, 01 Jun 2016 16:56:37 -0500
+
 
   * Imported Upstream version 0.3.4
   * Allow duplicates during scanning so "undefined" will be rescanned.
