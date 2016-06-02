@@ -73,7 +73,7 @@ Usage
 __Actions__
 
 Start scanning:
-    
+
     noble.startScanning(); // any service UUID, no duplicates
 
 
@@ -147,6 +147,8 @@ Characteristic broadcast
 Characteristic notify
 
     characteristic.notify(notify[, callback(error)]); // notify is true|false
+
+  * use for characteristics with notifiy or indicate properties
 
 Characteristic discover descriptors
 
@@ -301,7 +303,7 @@ Roadmap (TODO)
          * ~~read~~
          * ~~write~~
          * ~~set broadcast value~~
-         * ~~set notify value~~
+         * ~~set notify/indicate value~~
          * ~~descriptors~~
              * ~~discover~~
              * ~~read~~
@@ -337,7 +339,7 @@ Roadmap (TODO)
          * ~~read~~
          * ~~write~~
          * ~~set broadcast value~~
-         * ~~set notify value~~
+         * ~~set notify/indicate value~~
          * ~~descriptors~~
              * ~~discover~~
              * ~~read~~
@@ -357,7 +359,7 @@ Useful Links
  * [Bluetooth Development Portal](http://developer.bluetooth.org)
    * [GATT Specifications](http://developer.bluetooth.org/gatt/Pages/default.aspx)
  * [Bluetooth: ATT and GATT](http://epx.com.br/artigos/bluetooth_gatt.php)
-   
+
 License
 ========
 
@@ -368,4 +370,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-

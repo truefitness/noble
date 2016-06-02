@@ -2,6 +2,7 @@ APPNAME=noble
 VERSION := $(shell cd ./$(APPNAME); git describe --abbrev=0 --tags | sed 's/v//g' )
 APPDIR=${APPNAME}_${VERSION}
 #APPDIR=${APPNAME}_0.3.1
+APPDIR=${APPNAME}_0.3.4
 TARNAME=${APPDIR}.orig.tar.bz2
 
 
@@ -46,12 +47,10 @@ tarball:
 	@echo version $(VERSION)
 	mkdir -p $(APPDIR)
 	cp -a ./$(APPNAME) $(APPDIR)
-	rm -rf $(APPDIR)/.git	
+	rm -rf $(APPDIR)/.git
 	cp Makefile $(APPDIR)
 	cp README.md $(APPDIR)
 	@echo creating tar archive
 	tar cjf ${TARNAME} ${APPDIR} --exclude-vcs
 
 .PHONY : clean install dist-clean tarball
-
-
