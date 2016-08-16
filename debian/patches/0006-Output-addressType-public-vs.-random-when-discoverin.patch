@@ -4,7 +4,7 @@ Subject: Output addressType (public vs. random) when discovering heart rate
  devices
 
 ---
- noble/trueScripts/advertisement-heartrate-discovery.js | 16 ++++++++++------
+ .../advertisement-heartrate-discovery.js           |   16 ++++++++++------
  1 file changed, 10 insertions(+), 6 deletions(-)
 
 diff --git a/noble/trueScripts/advertisement-heartrate-discovery.js b/noble/trueScripts/advertisement-heartrate-discovery.js
@@ -39,3 +39,4 @@ index 82bff91..272ea05 100644
 +  console.log(peripheral.uuid  + ";" + name + ";" + peripheral.advertisement.txPowerLevel + ";" + addrType);
  });
  
+-- 
