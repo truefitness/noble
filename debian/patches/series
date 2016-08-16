@@ -4,3 +4,4 @@
 0004-Import-of-ws-module-need-by-0.3.4.patch
 0005-Allow-duplicate-scanning-results-so-that-an-undefine.patch
 0006-Output-addressType-public-vs.-random-when-discoverin.patch
+0007-Return-if-name-is-not-defined.patch

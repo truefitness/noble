@@ -1,0 +1,24 @@
+From: Mike Nolan <mpnolan@truefitness.com>
+Date: Tue, 16 Aug 2016 15:09:14 -0500
+Subject: Return if "name" is not defined
+
+This resolves issue where noble would terminate with a stack trace in rare cases where name was not defined, having the effect in the Touch application that the user would have to restart their heart rate scan repeatedly until the name data came through.
+---
+ .../advertisement-heartrate-discovery.js           |    3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/noble/trueScripts/advertisement-heartrate-discovery.js b/noble/trueScripts/advertisement-heartrate-discovery.js
+index 272ea05..314f683 100644
+--- a/noble/trueScripts/advertisement-heartrate-discovery.js
++++ b/noble/trueScripts/advertisement-heartrate-discovery.js
+@@ -18,6 +18,9 @@ noble.on('discover', function(peripheral) {
+   var addrType = addrTypes[peripheral.uuid];
+ 
+   var name = peripheral.advertisement.localName;
++  if (!name) {
++    return;
++  }
+   // Just in case
+   name = name.replace(";", "");
+ 
+-- 

@@ -1,8 +1,14 @@
+noble (0.3.4-2+true2) precise; urgency=low
+
+  * Return if "name" is not defined
+
+ -- Mike Nolan <mpnolan@truefitness.com>  Tue, 16 Aug 2016 15:12:53 -0500
+
 noble (0.3.4-2+true1) UNRELEASED; urgency=low
 
   * Output addressType (public vs. random) when scanning heart rate devices
 
- -- Robert Hedges <rhedges@truefitness.com>  Thu, 02 Jun 2016 21:30:20 +0000
+ -- Mike Nolan <mpnolan@truefitness.com>  Thu, 02 Jun 2016 21:30:20 +0000
 
 noble (0.3.4-2) UNRELEASED; urgency=low
 
